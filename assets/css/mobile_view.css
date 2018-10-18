@@ -1,0 +1,184 @@
+@media only screen and (max-width: 600px) {
+    body {
+    width:100%;
+	margin:0;
+	height:100%;
+	font-family: digital-7;
+	src: url('digital-7/digital-7.ttf') format('truetype');;
+	background-image: none;
+	float: left;
+	position: fixed !important;
+    }
+}
+#child1{
+	display: none;
+}
+#parent1:hover #child1{
+	display: block;
+	color: white;
+	position: fixed;
+	z-index: 25;
+	margin-left: 95vw;
+	margin-top: 18vh;
+	height: 2vh;
+	width: 6vw;
+}
+
+#child2{
+	display: none;
+}
+#parent2:hover #child2{
+	display: block;
+	color: white;
+	position: fixed;
+	z-index: 25;
+	margin-left: 94vw;
+	margin-top: 39vh;
+	height: 2vh;
+	width: 6vw;
+}
+
+#child3{
+	display: none;
+}
+#parent3:hover #child3{
+	display: block;
+	color: white;
+	position: fixed;
+	z-index: 25;
+	margin-left: 94vw;
+	margin-top: 60vh;
+	height: 2vh;
+	width: 6vw;
+}
+@media only screen and (max-width: 600px) {
+   video{
+	 position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index:-1;
+    opacity: 0.9;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(css/vid.mp4) no-repeat;
+    background-size: cover; 
+	}
+}
+@media only screen and (max-width: 600px) {
+#epreuvelogo {
+	display: none;
+	}
+}
+#logo{
+	z-index: 12 !important;
+	width: 36vw !important;
+	height: 10vw !important;
+	margin:1vh 3vw;
+	position: absolute;
+	-webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: .1s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+}
+
+#mobile_play{
+	z-index: 300; margin-left: 40vw;
+}
+
+@media only screen and (max-width: 600px) {
+#img4{
+	display: none;
+}
+}
+@media only screen and (max-width: 600px) {
+#img3{
+	display: none;
+}
+}
+@media only screen and (max-width: 600px) {
+#img2{
+	margin: -6vh -70vw;
+	display: block;
+	z-index: 3 !important;
+	height: 140vh;
+	width: 240vw;
+	position: relative;
+	}
+}
+
+.navbar{
+	position: absolute !important;
+	width: 100%;
+	z-index: 10;
+}
+@media only screen and (min-width: 600px) {
+.navbar{
+	display: none;
+}
+}
+@media only screen and (max-width: 600px) {
+#eppic{
+	display: none;
+}
+}
+@media only screen and (max-width: 600px) {
+#innopic{
+	display: none;
+}
+}
+/*img 1 is gif*/
+@media only screen and (max-width: 600px) {
+#img1{
+	z-index: 2 !important;
+	opacity: 0.9;
+    margin:39.5vh 37.3vw;
+	height:20vh;
+	width:25vw;
+	border-radius: 50%;
+	position: absolute;
+}
+}
+
+@media only screen and (max-width: 600px) {
+#rulespic{
+	display: none;
+}
+}
+@media only screen and (max-width: 600px) {
+#contactpic{
+	display: none;
+}
+}
+@media only screen and (max-width: 600px) {
+#sponsorpic{
+	display: none;
+}
+}
+@media only screen and (max-width: 600px) {
+#demo{
+	display: none;
+}
+}
+@media only screen and (max-width: 600px) {
+#datetime{
+	display: none;
+}
+}
+@media only screen and (max-width: 600px) {
+.btns{
+	display: none;
+}
+}
+@media only screen and (max-width: 600px) {
+.footer{
+	display: none;
+}
+}

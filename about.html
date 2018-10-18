@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>EPREUVE_18</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="assets/css/bootstrap.css" rel="stylesheet">
+  <link href="assets/css/epreuvehpcss.css" rel="stylesheet">
+  <link href="assets/css/mobile_view.css" rel="stylesheet">
+  <link href="assets/css/content.css" rel="stylesheet">
+  <link rel="shortcut icon" href="images/logo_black.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <script type="text/javascript" src="js/scripts.js"></script>
+  <script type="text/javascript">
+    var vid = document.getElementById("video");
+    vid.playbackRate = 1.7; 
+  </script>
+</head>
+<body onload="datetime()" oncontextmenu="return false" style="background-image: url(assets/images/im1.jpeg) !important;">
+
+  <!-- <video id="video" src="assets/images/vid.ogg" autoplay="true" loop="true"></video> -->
+  <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#my">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="index.html">
+        <img id="logo" src="assets/images/MAIN.png">  
+      </a>
+
+      <!-- <a class="navbar-brand" href="#"><p style="color: white; margin: -1vh 20vw;">Hello world</p></a> -->
+    </div>
+     <a href="#"></a>
+    <div class="collapse navbar-collapse" id="my">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">HOME</a></li>
+          <lI><a href="registration.html">REGISTRATION</a></li>
+           <lI><a href="login.html">LOGIN</a></li>
+        <li><a href="rules.html">RULES</a></li>
+        <li><a href="about.html">CONTACT US</a></li>
+        <li><a href="sponsors.html">SPONSERS</a></li>
+      </ul>
+  </div>
+  </div>
+</nav>
+<div class="btns" id="register"><!--<a href="registration.html" style="color: white; text-decoration: none;">--><span>Register</span></a></div>
+  <div class="btns" id="login">
+    <!--<a href="login.html"style="color: white; text-decoration: none;">--><span>Login</span></div></a>
+    <p>
+      <span id="datetime">
+        <span class="hours"></span>:<span class="minutes"></span>:<span class="seconds"></span>
+      </span>
+    </p>
+
+  <script>
+    function datetime() {
+      var today = new Date();
+      var h = today.getHours();
+      var m = today.getMinutes();
+      var s = today.getSeconds();
+      var clock = document.getElementById('datetime');
+      var hoursSpan = clock.querySelector('.hours');
+      var minutesSpan = clock.querySelector('.minutes');
+      var secondsSpan = clock.querySelector('.seconds');
+      hoursSpan.innerHTML = ('0' + h).slice(-2);
+      minutesSpan.innerHTML = ('0' + m).slice(-2);
+      secondsSpan.innerHTML = ('0' + s).slice(-2);
+      var t = setTimeout(datetime,1000);
+    }
+  </script>
+  <p id="demo"></p>
+
+<script>
+var countDownDate = new Date("Oct 26, 2018 19:00:00").getTime();
+var x = setInterval(function() {
+  var now = new Date().getTime();
+  var distance = countDownDate - now;
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  document.getElementById("demo").innerHTML = days + " days " + hours + " hrs "
+  + minutes + " min " + seconds + " sec ";
+
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+  <div style="display: none;" class="btns" id="play"><span>PLAY</span></div>
+  <img style="margin-top: -3.2% !important;" id="img4" src="assets/images/center.png">
+  <img style="margin-top: -3% !important;" id="img3" src="assets/images/up.png">
+
+  <div ><a href="https://innonitr.com"><img style="margin-top: 19.7% !important;" id="innopic" src="assets/images/inno.jpg"></a></div>
+  <div ><a href="index.html"><img style="margin-top: 19.7% !important;" id="eppic" src="assets/images/epreuve.png"></a></div> 
+
+  <!-- <div id="innovision"><span>INNOVISION'18</span></div> -->
+  <div id="parent1"><!--<a href="rules.html">--><img style="margin-top: 11% !important; height:7%;" id="rulespic" src="assets/images/Rules.png"><div id="child1"><b>RULES</b></div><!--</a>--></div>
+  <div id="parent2"><a href="about.html"><img style="margin-top: 20% !important; height:7%;" id="contactpic" src="assets/images/contact.jpg"><div id="child2"><b>ABOUT US</b></div></a></div>
+  <div id="parent3"><!--<a href="sponsors.html">--><img style="margin-top: 30% !important; height:7%;" id="sponsorpic" src="assets/images/sponsor.png"><div id="child3"><b>SPONSORS</b></div><!--</a>--></div>
+   <img id="img6" src="assets/images/left.png">
+   <img id="img8" src="assets/images/right-top.png"> 
+    <div id="content" style="overflow-y:auto !important;">
+        <br>
+        <center><h3 style="color:white;float:center;">EPREUVE 2K18</h3></center> 
+                      <div class="col-sm-10 col-sm-offset-1" style="color:white;"><br/><br/><br/>
+              <p style="text-align:justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Far away in one corner of the world, there was an inquisitive mind, wanting to be preoccupied with something interesting.. Something knowledgeable, something worthy enough of the devoted time. And one bright day, an idea crossed this mind. An idea to keep itself occupied. And that was the origin of the Epreuve. Epreuve, an online tech-hunt, with a perfect combination of basic science, technology and cryptic art, aims at keeping your mind boggling for the entire span of 48 hours it lasts. All that you need to do is some mind-scratching and applying loads of common sense to get through the set of brain-storming questions. To applaud on the occasion of you succeeding in the Epreuve, there will be exciting prizes and gift hampers. So its time to get your mind occupied. Take the Epreuve.</p>
+              </div>
+      
+ 
+        <div class="col-sm-10 col-sm-offset-1" style="color:white;"><br/><br/><br/>
+              
+                <center><h2 style="color:white;float:center;padding-top:30px;">CYBORG</h2></center>
+     <center><h4 style="color:white;float:center;padding-top:30px;">TECHNICAL SOCIETY , SAC , NIT ROURKELA</h4></center>
+
+              <p style="text-align:justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cyborg, a technical society under the National Institute of Technology, Rourkela focusses entirely on Robotics and Automation. It works under the collaboration of four basic realms - Mechanics, Electronics, Programming and Image Processing. It has a number of intriguing projects flourishing under it. It also conducts classes and workshops. It has been a proud contender of top ranks in a number of fests and competitions. Inquisitive talents of this institute have been getting the opportunity of stepping into our forum where we nurture and display the store of our white and grey matter&nbsp;,&nbsp;BECAUSE WE DESIGN INTELLIGENCE</p>
+              </div>
+
+              
+
+
+    </div>
+     <div id="epreuvelogo" style="margin-top: 6vh !important;"><a href="index.html"><img id="img5" src="assets/images/MAIN.png"></a></div>
+     <div class="stars"></div>
+<div class="twinkling"></div>
+<div class="clouds"></div>
+<div class="footer">
+    <!-- <div id="leftfoot"><a href="index.html" style="color: white; text-decoration: none;">HOME &nbsp;</a>|<a href="about.html" style="color: white; text-decoration: none;"> ABOUT &nbsp;</a> |&nbsp; <a href="privacy_policy.html"  style="color: white; text-decoration: none;"> PRIVACY POLICY</a> &nbsp;| CONTACT US &nbsp;</div> -->
+    <div id="midfoot">&copy; EPREUVE 2018</div>
+    <div id="rightfoot">All Rights Reserved by CYBORG , NIT ROURKELA</div>  
+  </div>
+
+  
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>EPREUVE_18</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/epreuvehpcss.css" rel="stylesheet">
+  <link href="css/mobile_view.css" rel="stylesheet">
+  <link href="css/content.css" rel="stylesheet">
+  <link rel="shortcut icon" href="css/logo_black.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <script type="text/javascript" src="js/scripts.js"></script>
+  <script type="text/javascript">
+    var vid = document.getElementById("video");
+    vid.playbackRate = 1.7; 
+  </script>
+</head>
+<body onload="datetime()" oncontextmenu="return false" style="background-image: url(css/im1.jpeg) !important;">
+
+  <video id="video" src="css/vid.mp4" autoplay="true" loop="true" ></video>
+  <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#my">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="index.html">
+        <img id="logo" src="css/MAIN.png">  
+      </a>
+      <!-- <a class="navbar-brand" href="#"><p style="color: white; margin: -1vh 20vw;">Hello world</p></a> -->
+    </div>
+     <a href="#"></a>
+    <div class="collapse navbar-collapse" id="my">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">HOME</a></li>
+          <lI><a href="registration.html">REGISTRATION</a></li>
+         <lI><a href="login.html">LOGIN</a></li>
+        <lI><a href="rules.html">RULES</a></li>
+        <li><a href="about.html">CONTACT US</a></li>
+        <li><a href="sponsors.html">SPONSERS</a></li>
+      </ul>
+  </div>
+  </div>
+</nav>
+ <div class="btns" id="register"><a href="registration.html" style="color: white; text-decoration: none;"><span>Register</span></a></div>
+  <div class="btns" id="login">
+    <a href="login.html"style="color: white; text-decoration: none;"><span>Login</span></div></a>
+    <p>
+      <span id="datetime">
+        <span class="hours"></span>:<span class="minutes"></span>:<span class="seconds"></span>
+      </span>
+    </p>
+
+  <script>
+    function datetime() {
+      var today = new Date();
+      var h = today.getHours();
+      var m = today.getMinutes();
+      var s = today.getSeconds();
+      var clock = document.getElementById('datetime');
+      var hoursSpan = clock.querySelector('.hours');
+      var minutesSpan = clock.querySelector('.minutes');
+      var secondsSpan = clock.querySelector('.seconds');
+      hoursSpan.innerHTML = ('0' + h).slice(-2);
+      minutesSpan.innerHTML = ('0' + m).slice(-2);
+      secondsSpan.innerHTML = ('0' + s).slice(-2);
+      var t = setTimeout(datetime,1000);
+    }
+  </script>
+  <p id="demo"></p>
+
+<script>
+var countDownDate = new Date("Oct 26, 2018 19:00:00").getTime();
+var x = setInterval(function() {
+  var now = new Date().getTime();
+  var distance = countDownDate - now;
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  document.getElementById("demo").innerHTML = days + " days " + hours + " hrs "
+  + minutes + " min " + seconds + " sec ";
+
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+  <div style="display: none;" class="btns" id="play"><span>PLAY</span></div>
+  <img style="margin-top: -3.2% !important;" id="img4" src="css/center.png">
+  <img style="margin-top: -3% !important;" id="img3" src="css/up.png">
+  <div ><a href="https://innovision.nitrkl.ac.in"><img style="margin-top: 19.7% !important;" id="innopic" src="css/inno.jpg"></a></div>
+  <div ><a href="index.html"><img style="margin-top: 19.7% !important;" id="eppic" src="css/epreuve.png"></a></div>  
+  <!-- <div id="innovision"><span>INNOVISION'18</span></div> -->
+  <div id="parent1"><a href="rules.html"><img style="margin-top: 11% !important; height:7%;" id="rulespic" src="css/Rules.png"><div id="child1"><b>RULES</b></div></a></div>
+  <div id="parent2"><a href="about.html"><img style="margin-top: 20% !important; height:7%;" id="contactpic" src="css/contact.jpg"><div id="child2"><b>ABOUT US</b></div></a></div>
+  <div id="parent3"><a href="sponsors.html"><img style="margin-top: 30% !important; height:7%;" id="sponsorpic" src="css/sponsor.jpg"><div id="child3"><b>SPONSORS</b></div></a></div>
+    <div id="content" style="overflow-y:auto !important;">
+      <br>
+         <center><h3 style="color:white;float:center;">RULES FOR REGISTRATION</h3></center>
+         <div class=" col-sm-10 col-sm-offset-1" style="color:white;"><br/><br/>
+    <h3 style="color:white;">Gaming Structure</h3>
+              <p style="text-align:justify;"> 1. The game involves a story divided into 20 levels with some surprise bonus levels with extra rewards.  The entire game spans over 2 days (48 hours)<br/>
+                              2. Each level revolves around a sub-plot of the story with some technical challenges attached to it.<br/>
+                              3. You must try to solve the challenge to get to the next level, where the next part of the story will be revealed.<br/>
+                              4. There is no limitation on number of attempts made by a user. <br />
+                              5. There is a unique solution to every question. <br />
+                              6. Help can be asked in the comment section of the gaming platform.<br/>
+                              7. Hint for the questi as featured comment in the comment section.<br/>
+                              8. Percentile and Current level will be shown in the progress bar.<br/>
+                              9. Users posting direcons will be provided after certain period of time. Same will be displayedt answers to the comment section will be banned to use the comment section (* may be banned from game, if answers of higher levels).<br/>
+</p>
+              </div> 
+              <br>
+            <div class="col-sm-10 col-sm-offset-1" style="color:white;"><br/><br/>
+    <h3 style="color:white;">Registration</h3>
+              <p style="text-align:justify;"> 1. The registration for the event will start from 11th October 2017.<br/>
+                                                            2. Registrations for the event can be done with the help of signup option on the navigation bar.<br/>
+                                                            3. Automatic redirection to game page after successful login.<br/>
+                                                            4. Game page can also be accessed from the homepage.<br/>
+                                                            5. Notifications for the event will be sent to the registered email prior to the event.<br/>
+<br/>
+</p>
+              </div>
+              <br>
+              <div class="col-sm-10 col-sm-offset-1" style="color:white;"><br/><br/>
+                            <h3 style="color:white;">Awards for achievements</h3>
+                  <p style="text-align:justify;"> 1. Prizes worth 50k<br/>
+                                                  2. Goodies for lucky registration participants.<br/>
+                                                  3. Grand prizes(Cash prizes) at final level includes : 
+                                                      <ul>
+                                                          <li>1st prize - INR 7000 </li>
+                                                          <li>2nd prize - INR 5000 </li>
+                                                          <li>3rd prize - INR 3000 </li>
+                                                      </ul>
+                                                                4. The top 2 winners of each level will be awarded with goodies (<strong><em>not cash</em></strong>) on subject to consideration that they are not among the winners in any of the previous level.<br>
+                                                                5. Prizes for the individual levels(excluding bonus levels) include:
+                                                                    <ul>
+                                                          <li>1<sup>st</sup> prize-16GB Pendrive </li>
+                                                          <li>2<sup>nd</sup> prize-T-shirt </li>
+                                                      </ul>
+                                                                6. Prizes for the bonus levels(goodies) include:
+                                                                    <ul>
+                                                          <li>1<sup>st</sup> prize-Bluetooth Speaker </li>
+                                                          <li>2<sup>nd</sup> prize-16GB Pendrive </li>
+                                                          <li>3<sup>rd</sup> prize-T-shirt </li>
+                                                      </ul>
+                                                                
+                                                                  
+<br/>
+</p>
+              </div><br>
+
+    </div>
+    <div id="epreuvelogo" style="margin-top: 1.5vh !important; width: 12vw !important;"><a href="index.html"><img id="img5" src="css/MAIN.png"></a></div>
+ <div class="footer">
+    <div id="leftfoot"><a href="index.html" style="color: white; text-decoration: none;">HOME &nbsp;</a>|<a href="about.html" style="color: white; text-decoration: none;"> ABOUT &nbsp;</a> |&nbsp; <a href="privacy_policy.html"  style="color: white; text-decoration: none;"> PRIVACY POLICY</a> &nbsp;| CONTACT US &nbsp;</div>
+    <div id="midfoot">&copy; EPREUVE 2018</div>
+    <div id="rightfoot">All Rights Reserved by CYBORG , NIT ROURKELA</div>  
+  </div>
+
+  
+</body>
+</html>

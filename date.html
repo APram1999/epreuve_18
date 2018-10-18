@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>	date</title>
+</head>
+<body>
+<style style="text/css">
+.horizontally {
+ height: 100px;	
+ overflow: hidden;
+ position: relative;
+}
+.horizontally .inner {
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ text-align: center;
+ /* Starting position */
+ -moz-transform:translateX(40%);
+ -webkit-transform:translateX(40%);	
+ transform:translateX(40%);
+ /* Apply animation to this element */	
+ -moz-animation: horizontally 5s linear infinite alternate;
+ -webkit-animation: horizontally 5s linear infinite alternate;
+ animation: horizontally 5s linear infinite alternate;
+}
+/* Move it (define the animation) */
+@-moz-keyframes horizontally {
+ 0%   { -moz-transform: translateX(40%); }
+ 100% { -moz-transform: translateX(-40%); }
+}
+@-webkit-keyframes horizontally {
+ 0%   { -webkit-transform: translateX(40%); }
+ 100% { -webkit-transform: translateX(-40%); }
+}
+@keyframes horizontally {
+ 0%   { 
+ -moz-transform: translateX(40%); /* Browser bug fix */
+ -webkit-transform: translateX(40%); /* Browser bug fix */
+ transform: translateX(40%); 		
+ }
+ 100% { 
+ -moz-transform: translateX(-40%); /* Browser bug fix */
+ -webkit-transform: translateX(-40%); /* Browser bug fix */
+ transform: translateX(-40%); 
+ }
+}
+</style>
+
+<div class="horizontally">
+<div class="inner">
+<img src="//www.html.am/images/html-codes/marquees/bee.gif" alt="Buzzy bee">
+</div>
+</div>
+<!-- Codes by HTML.am -->
+
+<!-- CSS Code -->
+<!-- Codes by HTML.am -->
+
+<!-- CSS Code -->
+<style type="text/css" scoped>
+.GeneratedMarquee {
+font-family:'Comic Sans MS';
+font-size:1em;
+line-height:24em;
+color:#330099;
+background-color:#CCFFFF;
+padding:5em;
+
+}
+</style>
+
+<!-- HTML Code -->
+<marquee class="GeneratedMarquee" direction="left" scrollamount="6" behavior="alternate"><img src="http://localhost/old/assets/images/MAIN.png" alt=""></marquee>
+
+
+</body>
+</html>
